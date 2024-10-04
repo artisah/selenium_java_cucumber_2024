@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-03T16:34:07 EDT" name="Suite" finished-at="2024-10-03T16:34:08 EDT" duration-ms="1014">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@6ce139a4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-03T16:34:07 EDT" name="Test" finished-at="2024-10-03T16:34:08 EDT" duration-ms="1014">
+      <class name="runners.MainRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MainRunner@6ce139a4]" started-at="2024-10-03T16:34:07 EDT" name="setUpClass" finished-at="2024-10-03T16:34:08 EDT" duration-ms="559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@222545dc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@6ce139a4]" started-at="2024-10-03T16:34:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-03T16:34:08 EDT" duration-ms="263" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate successfull submission -  unique data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Webdriver University Web page - Contact Us page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at driver.Driverfactory.createDriver(Driverfactory.java:43)
+at driver.Driverfactory.getDriver(Driverfactory.java:22)
+at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@6ce139a4]" started-at="2024-10-03T16:34:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-03T16:34:08 EDT" duration-ms="263" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate successfull and unsuccessfull login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Webdriver University Web page - Login page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at driver.Driverfactory.createDriver(Driverfactory.java:43)
+at driver.Driverfactory.getDriver(Driverfactory.java:22)
+at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@6ce139a4]" started-at="2024-10-03T16:34:08 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-03T16:34:08 EDT" duration-ms="28" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate successfull and unsuccessfull login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Webdriver University Web page - Login page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+at java.base/java.util.Optional.orElseGet(Optional.java:364)
+at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at driver.Driverfactory.createDriver(Driverfactory.java:43)
+at driver.Driverfactory.getDriver(Driverfactory.java:22)
+at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MainRunner@6ce139a4]" started-at="2024-10-03T16:34:08 EDT" name="tearDownClass" finished-at="2024-10-03T16:34:08 EDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.MainRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.460 s <<< FAILURE! -- in TestSuite
+runners.MainRunner.runScenario["Validate successfull submission -  unique data", "Optional[Webdriver University Web page - Contact Us page]"](2) -- Time elapsed: 0.271 s <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+
+runners.MainRunner.runScenario["Validate successfull and unsuccessfull login", "Optional[Webdriver University Web page - Login page]"](2) -- Time elapsed: 0.272 s <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+
+runners.MainRunner.runScenario["Validate successfull and unsuccessfull login", "Optional[Webdriver University Web page - Login page]"](3) -- Time elapsed: 0.029 s <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Artis-MBP', ip: 'fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.12'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+

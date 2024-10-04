@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 03 16:34:07 EDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1014 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.MainRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MainRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate successfull and unsuccessfull login", "Optional[Webdriver University Web page - Login page]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Artis-MBP&apos;, ip: &apos;fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1842852181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1842852181'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Artis-MBP&apos;, ip: &apos;fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>runners.MainRunner@6ce139a4</td></tr>
+<tr>
+<td title='runners.MainRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MainRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate successfull submission -  unique data", "Optional[Webdriver University Web page - Contact Us page]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Artis-MBP&apos;, ip: &apos;fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace676613991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace676613991'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Artis-MBP&apos;, ip: &apos;fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>runners.MainRunner@6ce139a4</td></tr>
+<tr>
+<td title='runners.MainRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MainRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate successfull and unsuccessfull login", "Optional[Webdriver University Web page - Login page]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Artis-MBP&apos;, ip: &apos;fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2005342479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2005342479'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;Artis-MBP&apos;, ip: &apos;fdd2:ac48:382a:b447:1821:5c95:bc6:e55%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;17.0.12&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at driver.Driverfactory.createDriver(Driverfactory.java:43)
+	at driver.Driverfactory.getDriver(Driverfactory.java:22)
+	at stepDefinitions.base.Hooks.setup(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>runners.MainRunner@6ce139a4</td></tr>
+</table><p>
+</body>
+</html>
